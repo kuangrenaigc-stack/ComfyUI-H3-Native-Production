@@ -1,0 +1,9 @@
+{
+  "prompt": "",
+  "image_path": "",
+  "video_path": "",
+  "num_frames": 362,
+  "save_result_path": "/opt/h3/runtime/jobs/example/generated.mp4",
+  "seed": 20260915,
+  "audio_path": ""
+}

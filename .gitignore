@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+settings.local.json
+*.safetensors
+*.pt
+*.pth
+*.mp4
+*.mov
+*.wav
+*.log
+.env
+.env.*
+build/
+dist/

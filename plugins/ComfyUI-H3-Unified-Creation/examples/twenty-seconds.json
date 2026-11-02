@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "subjects": [
+    {
+      "id": "warrior",
+      "kind": "actor",
+      "description": "the futuristic warrior with the same face, white hood, pale hair, worn white mechanical armor, articulated feather-like wings and circular luminous apparatus"
+    },
+    {
+      "id": "woman",
+      "kind": "actor",
+      "description": "the woman with the same facial identity, dark hair, patterned red head covering and red clothing"
+    },
+    {
+      "id": "palace",
+      "kind": "scene",
+      "description": "the palace interior with carved dark timber, red pillars, lattice windows, candles and red furnishings"
+    },
+    {
+      "id": "instrument",
+      "kind": "prop",
+      "description": "the elongated dark wooden plucked-string instrument, retaining its strings and visible bridges"
+    }
+  ],
+  "references": [
+    {
+      "id": "warrior_ref",
+      "media": "image",
+      "slot": 1,
+      "role": "appearance",
+      "subject": "warrior"
+    },
+    {
+      "id": "woman_ref",
+      "media": "image",
+      "slot": 2,
+      "role": "appearance",
+      "subject": "woman"
+    },
+    {
+      "id": "palace_ref",
+      "media": "image",
+      "slot": 3,
+      "role": "appearance",
+      "subject": "palace"
+    },
+    {
+      "id": "instrument_ref",
+      "media": "image",
+      "slot": 4,
+      "role": "appearance",
+      "subject": "instrument"
+    },
+    {
+      "id": "boardA",
+      "media": "image",
+      "slot": 5,
+      "role": "storyboard",
+      "segments": [
+        "part1"
+      ]
+    },
+    {
+      "id": "boardB",
+      "media": "image",
+      "slot": 6,
+      "role": "storyboard",
+      "segments": [
+        "part2"
+      ]
+    }
+  ],
+  "style": "Cinematic fantasy with natural skin and material texture, soft lattice-window daylight and warm candlelight. Preserve the room layout and entrance direction.",
+  "soundscape": "Quiet palace room tone and subtle breathing. Instrument sounds occur only during the visible performance; localized physical sounds follow the relevant shot.",
+  "segments": [
+    {
+      "id": "part1",
+      "duration": 15,
+      "summary": "The woman plays the instrument, suddenly stops upon noticing a shadowed corner and urgently calls for help.",
+      "storyboard": {
+        "reference": "boardA",
+        "shots": [
+          "shot1",
+          "shot2"
+        ]
+      },
+      "shots": [
+        {
+          "id": "shot1",
+          "at": 0,
+          "subjects": [
+            "woman",
+            "palace",
+            "instrument"
+          ],
+          "description": "Begin close on {{woman}}'s hands playing {{instrument}}. One slow upward tilt reaches her relaxed, quietly delighted face. Audible plucked notes follow the visible finger movements and reverberate inside {{palace}}."
+        },
+        {
+          "id": "shot2",
+          "at": 7,
+          "subjects": [
+            "woman",
+            "palace"
+          ],
+          "description": "A close-up of {{woman}}. At the instant she suddenly looks toward the shadowed corner near the entrance, she stops playing and damps the strings. The instrument becomes silent and never resumes. Her curiosity gradually turns to startled alarm as dry wooden creaks sound from the off-screen corner. End holding her alarmed gaze toward that direction.",
+          "dialogue": [
+            {
+              "speaker": "woman",
+              "language": "Mandarin",
+              "text": "侍衛何在！",
+              "delivery": "calls with a slightly trembling voice"
+            },
+            {
+              "speaker": "woman",
+              "language": "Mandarin",
+              "text": "快拉人啊！",
+              "delivery": "calls more urgently"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part2",
+      "duration": 5,
+      "summary": "The camera turns to the entrance, where an oval yellow portal reveals the futuristic warrior.",
+      "storyboard": {
+        "reference": "boardB",
+        "shots": [
+          "shot3"
+        ]
+      },
+      "shots": [
+        {
+          "id": "shot3",
+          "at": 0,
+          "subjects": [
+            "woman",
+            "palace",
+            "warrior"
+          ],
+          "description": "Start beside {{woman}} on her alarmed profile, retaining the prior state during overlap context. Afterwards, make one fast continuous whip-pan toward the doorway and settle there. An upright oval of yellow light fills the entrance, and {{warrior}} steps through it, keeping the articulated wings close enough to clear the opening. Yellow portal light falls on nearby woodwork and armor. Restrained electrical hum, mechanical movement and footfalls accompany the entrance. The instrument stays silent."
+        }
+      ]
+    }
+  ]
+}

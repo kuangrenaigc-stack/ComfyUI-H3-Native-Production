@@ -1,0 +1,64 @@
+{
+  "infer_steps": 8,
+  "num_frames": 192,
+  "size": [
+    1088,
+    1920
+  ],
+  "fps": 24,
+  "enable_cfg": false,
+  "cpu_offload": true,
+  "use_adaln_cache": true,
+  "adaln_cache_dir": "/opt/h3/adaln-cache",
+  "offload_granularity": "block",
+  "text_encoder_cpu_offload": false,
+  "text_encoder_tensor_parallel": true,
+  "vae_cpu_offload": true,
+  "vae_decode_parallel": true,
+  "lazy_load": false,
+  "unload_modules": false,
+  "attn_type": "sage_attn2",
+  "rms_type": "one-pass",
+  "rope_type": "minimax_h3_triton_rope",
+  "feature_caching": "NoCaching",
+  "use_compile": false,
+  "warmup": false,
+  "video_flow_shift": 12.0,
+  "audio_flow_shift": 3.0,
+  "vae_spatial_scale_factor": 16,
+  "audio_sampling_rate": 32000,
+  "parallel": {
+    "tensor_p_size": 2
+  },
+  "text_encoder_load_on_init": false,
+  "model_variant": "ref2av",
+  "h3_step_update": "training_euler",
+  "lora_dynamic_apply": true,
+  "reference_image_resize_mode": "match",
+  "lora_configs": [
+    {
+      "path": "/opt/h3/loras/minimax_h3_ref2v_turbo_8step_v1.1_768p_bf16.safetensors",
+      "strength": 1.0,
+      "alpha": 8
+    }
+  ],
+  "dit_prepost_resident": false,
+  "cpu_offload_layout": "per_tensor",
+  "h3_acceleration_mode": "standard",
+  "h3_rms_backend": "triton-one-pass-custom-op-v1",
+  "h3_resident_blocks": 0,
+  "vae_use_compile": false,
+  "h3_native_draft_steps": 10,
+  "dit_quantized": true,
+  "dit_quant_scheme": "int8-convrot",
+  "dit_quantized_ckpt": "/opt/h3/weights",
+  "dit_original_ckpt": "/opt/h3/weights",
+  "feihou_precision_manifest": "/opt/h3/weights/alignment-manifest.json",
+  "h3_two_pass": true,
+  "h3_draft_steps": 10,
+  "h3_draft_size": [
+    480,
+    832
+  ],
+  "h3_resample_start": 3
+}

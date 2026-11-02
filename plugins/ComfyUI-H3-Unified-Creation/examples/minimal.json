@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "subjects": [
+    {
+      "id": "lead",
+      "kind": "actor",
+      "description": "the adult protagonist"
+    }
+  ],
+  "references": [
+    {
+      "id": "portrait",
+      "media": "image",
+      "slot": 1,
+      "role": "appearance",
+      "subject": "lead"
+    }
+  ],
+  "segments": [
+    {
+      "id": "part1",
+      "shots": [
+        {
+          "id": "s1",
+          "at": 0,
+          "subjects": [
+            "lead"
+          ],
+          "description": "A continuous close view of {{lead}} smiling softly in natural window light."
+        }
+      ]
+    }
+  ]
+}

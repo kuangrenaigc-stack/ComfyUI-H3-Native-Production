@@ -1,0 +1,249 @@
+{
+  "version": 1,
+  "summary": "A courtyard meeting continues indoors when a new visitor arrives.",
+  "style": "Cinematic realism. Preserve each scene's own motivated lighting.",
+  "soundscape": "Footsteps, room ambience and soft clothing movement.",
+  "subjects": [
+    {
+      "id": "actor1",
+      "kind": "actor",
+      "description": "adult actor 1, with the identity and clothing of their appearance reference"
+    },
+    {
+      "id": "actor2",
+      "kind": "actor",
+      "description": "adult actor 2, with the identity and clothing of their appearance reference"
+    },
+    {
+      "id": "actor3",
+      "kind": "actor",
+      "description": "adult actor 3, with the identity and clothing of their appearance reference"
+    },
+    {
+      "id": "actor4",
+      "kind": "actor",
+      "description": "adult actor 4, with the identity and clothing of their appearance reference"
+    },
+    {
+      "id": "sceneA",
+      "kind": "scene",
+      "description": "the palace courtyard"
+    },
+    {
+      "id": "sceneB",
+      "kind": "scene",
+      "description": "the interior reception room"
+    },
+    {
+      "id": "phone",
+      "kind": "prop",
+      "description": "the handheld phone"
+    }
+  ],
+  "references": [
+    {
+      "id": "face1",
+      "media": "image",
+      "slot": 1,
+      "role": "appearance",
+      "subject": "actor1"
+    },
+    {
+      "id": "face2",
+      "media": "image",
+      "slot": 2,
+      "role": "appearance",
+      "subject": "actor2"
+    },
+    {
+      "id": "face3",
+      "media": "image",
+      "slot": 3,
+      "role": "appearance",
+      "subject": "actor3"
+    },
+    {
+      "id": "face4",
+      "media": "image",
+      "slot": 4,
+      "role": "appearance",
+      "subject": "actor4"
+    },
+    {
+      "id": "courtyard",
+      "media": "image",
+      "slot": 5,
+      "role": "appearance",
+      "subject": "sceneA"
+    },
+    {
+      "id": "room",
+      "media": "image",
+      "slot": 6,
+      "role": "appearance",
+      "subject": "sceneB"
+    },
+    {
+      "id": "board1",
+      "media": "image",
+      "slot": 7,
+      "role": "storyboard"
+    },
+    {
+      "id": "board2",
+      "media": "image",
+      "slot": 8,
+      "role": "storyboard"
+    },
+    {
+      "id": "phone_image",
+      "media": "image",
+      "slot": 9,
+      "role": "appearance",
+      "subject": "phone"
+    },
+    {
+      "id": "voice3",
+      "media": "audio",
+      "slot": 1,
+      "role": "voice",
+      "subject": "actor3"
+    },
+    {
+      "id": "voice4",
+      "media": "audio",
+      "slot": 2,
+      "role": "voice",
+      "subject": "actor4"
+    },
+    {
+      "id": "walk3",
+      "media": "video",
+      "slot": 1,
+      "role": "motion",
+      "subject": "actor3"
+    }
+  ],
+  "segments": [
+    {
+      "id": "part1",
+      "duration": 15,
+      "storyboard": {
+        "reference": "board1",
+        "shots": [
+          "a1",
+          "a2",
+          "a3"
+        ]
+      },
+      "shots": [
+        {
+          "id": "a1",
+          "at": 0,
+          "subjects": [
+            "actor1",
+            "actor2",
+            "sceneA"
+          ],
+          "description": "A steady wide view of {{actor1}} and {{actor2}} waiting in {{sceneA}}. Warm window light and cool sky fill."
+        },
+        {
+          "id": "a2",
+          "at": 5,
+          "subjects": [
+            "actor1",
+            "actor3",
+            "sceneA"
+          ],
+          "uses": [
+            "walk3"
+          ],
+          "description": "A continuous medium view of {{actor3}} approaching {{actor1}} in {{sceneA}}, following the restrained walk in {{walk3}}.",
+          "dialogue": [
+            {
+              "speaker": "actor3",
+              "language": "English",
+              "text": "The visitor has arrived.",
+              "delivery": "says respectfully",
+              "voice": "voice3"
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "at": 10,
+          "subjects": [
+            "actor1",
+            "actor2",
+            "actor3",
+            "sceneA"
+          ],
+          "description": "A wide view of {{actor1}}, {{actor2}} and {{actor3}} in {{sceneA}}. {{actor1}} looks toward the doorway."
+        }
+      ]
+    },
+    {
+      "id": "part2",
+      "duration": 15,
+      "storyboard": {
+        "reference": "board2",
+        "shots": [
+          "b1",
+          "b2",
+          "b3"
+        ]
+      },
+      "shots": [
+        {
+          "id": "b1",
+          "at": 0,
+          "subjects": [
+            "actor1",
+            "actor3",
+            "sceneA"
+          ],
+          "description": "Continue the courtyard encounter with {{actor1}} and {{actor3}} in {{sceneA}}.",
+          "dialogue": [
+            {
+              "speaker": "actor1",
+              "language": "Cantonese",
+              "text": "请她进来。",
+              "delivery": "says after the overlap context"
+            }
+          ]
+        },
+        {
+          "id": "b2",
+          "at": 5,
+          "subjects": [
+            "actor1",
+            "actor4",
+            "sceneB",
+            "phone"
+          ],
+          "description": "A medium view inside {{sceneB}}. {{actor4}} holds {{phone}} while facing {{actor1}}. Soft interior window light replaces the exterior lighting.",
+          "dialogue": [
+            {
+              "speaker": "actor4",
+              "language": "English",
+              "text": "I brought the message.",
+              "delivery": "says with restrained concern",
+              "voice": "voice4"
+            }
+          ]
+        },
+        {
+          "id": "b3",
+          "at": 10,
+          "subjects": [
+            "actor1",
+            "actor4",
+            "sceneB",
+            "phone"
+          ],
+          "description": "A close view of {{actor1}} accepting {{phone}} from {{actor4}} in {{sceneB}}. Hold this continuous framing."
+        }
+      ]
+    }
+  ]
+}

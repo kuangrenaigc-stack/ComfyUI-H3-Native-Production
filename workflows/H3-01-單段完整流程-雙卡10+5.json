@@ -1,0 +1,456 @@
+{
+  "id": "412ac8d6-4d1d-4a29-bee7-ec6a0922bde6",
+  "revision": 5,
+  "last_node_id": 6,
+  "last_link_id": 4,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "H3OriginalImage",
+      "pos": [
+        0,
+        0
+      ],
+      "size": [
+        300,
+        294
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "原圖",
+          "name": "原圖",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            1
+          ]
+        }
+      ],
+      "title": "圖1 · 背景原圖",
+      "properties": {
+        "Node name for S&R": "H3OriginalImage"
+      },
+      "widgets_values": [
+        "background.png",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "H3-背景.png",
+        "upload": "image"
+      }
+    },
+    {
+      "id": 2,
+      "type": "H3OriginalImage",
+      "pos": [
+        0,
+        300
+      ],
+      "size": [
+        300,
+        294
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "原圖",
+          "name": "原圖",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            2
+          ]
+        }
+      ],
+      "title": "圖2 · 女主原圖",
+      "properties": {
+        "Node name for S&R": "H3OriginalImage"
+      },
+      "widgets_values": [
+        "character.png",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "H3-女主.png",
+        "upload": "image"
+      }
+    },
+    {
+      "id": 3,
+      "type": "H3OriginalImage",
+      "pos": [
+        0,
+        600
+      ],
+      "size": [
+        300,
+        294
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "原圖",
+          "name": "原圖",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            3
+          ]
+        }
+      ],
+      "title": "圖3 · 手機原圖",
+      "properties": {
+        "Node name for S&R": "H3OriginalImage"
+      },
+      "widgets_values": [
+        "prop.png",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "H3-手機.png",
+        "upload": "image"
+      }
+    },
+    {
+      "id": 4,
+      "type": "LightX2VH3References",
+      "pos": [
+        350,
+        60
+      ],
+      "size": [
+        390,
+        310
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "图片输入数量",
+          "name": "image_count",
+          "type": "INT",
+          "widget": {
+            "name": "image_count"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "视频输入数量",
+          "name": "video_count",
+          "type": "INT",
+          "widget": {
+            "name": "video_count"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "音频输入数量",
+          "name": "audio_count",
+          "type": "INT",
+          "widget": {
+            "name": "audio_count"
+          },
+          "link": null
+        },
+        {
+          "label": "图片1",
+          "name": "images.图片1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 1
+        },
+        {
+          "label": "图片2",
+          "name": "images.图片2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 2
+        },
+        {
+          "label": "图片3",
+          "name": "images.图片3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 3
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "全能参考素材",
+          "name": "全能参考素材",
+          "type": "H3_REFERENCES",
+          "links": [
+            4
+          ]
+        }
+      ],
+      "title": "參考素材 · 圖1背景／圖2人物／圖3手機",
+      "properties": {
+        "Node name for S&R": "LightX2VH3References"
+      },
+      "widgets_values": [
+        3,
+        0,
+        0
+      ],
+      "widgets_values_named": {
+        "image_count": 3,
+        "video_count": 0,
+        "audio_count": 0
+      }
+    },
+    {
+      "id": 5,
+      "type": "H3FeiHouNativeComplete",
+      "pos": [
+        800,
+        0
+      ],
+      "size": [
+        690,
+        950
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "references",
+          "name": "references",
+          "type": "H3_REFERENCES",
+          "link": 4
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "width",
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "height",
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "duration_seconds",
+          "name": "duration_seconds",
+          "type": "INT",
+          "widget": {
+            "name": "duration_seconds"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "timeout_minutes",
+          "name": "timeout_minutes",
+          "type": "INT",
+          "widget": {
+            "name": "timeout_minutes"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "原生成片",
+          "name": "原生成片",
+          "type": "VIDEO",
+          "slot_index": 0,
+          "links": null
+        },
+        {
+          "localized_name": "伺服器成片路徑",
+          "name": "伺服器成片路徑",
+          "type": "STRING",
+          "slot_index": 1,
+          "links": null
+        }
+      ],
+      "title": "單段完整生成 · 雙卡10＋5",
+      "properties": {
+        "Node name for S&R": "H3FeiHouNativeComplete"
+      },
+      "widgets_values": [
+        "subject_definitions:\n<Subject 1> is the adult woman in <Picture 2>. Preserve her identity, short dark bob, cream high-neck blouse, patterned skirt and tan belt. Her voice is S1.\n<Subject 2> is the flower-lined pastel street in <Picture 1>. The large green double door on the ground floor at the left is the doorway she exits.\n<Subject 3> is the silver foldable smartphone in <Picture 3>, preserving its shape, metallic finish and rear camera arrangement. The different views describe one phone held by <Subject 1>.\n\nsummary:\n[reference generation] A roughly fifteen-second scene in <Subject 2>. <Subject 1> leaves the green doorway carrying <Subject 3>, pauses thoughtfully, answers a call in Cantonese, then hesitates, hangs up in sadness and blames herself.\n\nretention_analysis:\n<Subject 1> (throughout): fully_preserved - retain her identity, hair and clothing while allowing natural movement and changing expressions.\n<Subject 2> (throughout): fully_preserved - retain the green doorway, pastel facades, flowers and street setting.\n<Subject 3> (throughout): fully_preserved - retain one consistent phone; the reference sheet's white background and multiple-view layout do not appear.\n\ndetailed_description:\nThe scene uses realistic live-action imagery with warm afternoon sunlight from the street on her right and soft sky and pastel-wall fill. Keep light direction coherent as she leaves the doorway and answers the call, with controlled highlights and natural skin texture.\n[Shot 1] A medium-telephoto long shot frames the green doorway and the woman. Show <Subject 1> head to toe at a readable scale, framed by the green doorway and surrounding flowers, with the pastel facade establishing the street. Keep natural telephoto depth compression. In the opening three seconds, she pushes open the green double door and steps outside holding <Subject 3>. She then pauses outside and looks to her left for a moment, thoughtful and preoccupied. Hold this medium-telephoto long shot through her pause.\n[Shot 2] At 00:05.000, the shot cuts to a waist-up medium shot. A short electronic ringtone suddenly sounds from <Subject 3>. She answers and brings the phone to her ear; the ringing stops. <Subject 1> (S1), in a clear, polite adult female Cantonese voice, says <d>[Cantonese] 你好 我是金崇煥請問您找那位？</d> She silently considers what she has heard for roughly two seconds. Keep the conversational rhythm natural; the caller is not heard.\n[Shot 3] At 00:09.000, the shot cuts to an intimate close-up of her face. <Subject 1> hesitates for about two seconds, her expression turning sorrowful as she ends the call. A small tear slowly runs from the corner of her eye. <Subject 1> (S1) murmurs to herself in a quiet, regretful Cantonese voice, <d>[Cantonese] 對比起是我的的錯</d>\n\noverall_soundscape:\nQuiet street ambience and a faint breeze through blossoms continue throughout. The door opening, footsteps, clothing rustle and a brief electronic phone ring are audible.\n\nnon_diegetic_music:\nN/A\n",
+        1280,
+        768,
+        15,
+        2026102508,
+        "fixed",
+        120
+      ],
+      "widgets_values_named": {
+        "prompt": "subject_definitions:\n<Subject 1> is the adult woman in <Picture 2>. Preserve her identity, short dark bob, cream high-neck blouse, patterned skirt and tan belt. Her voice is S1.\n<Subject 2> is the flower-lined pastel street in <Picture 1>. The large green double door on the ground floor at the left is the doorway she exits.\n<Subject 3> is the silver foldable smartphone in <Picture 3>, preserving its shape, metallic finish and rear camera arrangement. The different views describe one phone held by <Subject 1>.\n\nsummary:\n[reference generation] A roughly fifteen-second scene in <Subject 2>. <Subject 1> leaves the green doorway carrying <Subject 3>, pauses thoughtfully, answers a call in Cantonese, then hesitates, hangs up in sadness and blames herself.\n\nretention_analysis:\n<Subject 1> (throughout): fully_preserved - retain her identity, hair and clothing while allowing natural movement and changing expressions.\n<Subject 2> (throughout): fully_preserved - retain the green doorway, pastel facades, flowers and street setting.\n<Subject 3> (throughout): fully_preserved - retain one consistent phone; the reference sheet's white background and multiple-view layout do not appear.\n\ndetailed_description:\nThe scene uses realistic live-action imagery with warm afternoon sunlight from the street on her right and soft sky and pastel-wall fill. Keep light direction coherent as she leaves the doorway and answers the call, with controlled highlights and natural skin texture.\n[Shot 1] A medium-telephoto long shot frames the green doorway and the woman. Show <Subject 1> head to toe at a readable scale, framed by the green doorway and surrounding flowers, with the pastel facade establishing the street. Keep natural telephoto depth compression. In the opening three seconds, she pushes open the green double door and steps outside holding <Subject 3>. She then pauses outside and looks to her left for a moment, thoughtful and preoccupied. Hold this medium-telephoto long shot through her pause.\n[Shot 2] At 00:05.000, the shot cuts to a waist-up medium shot. A short electronic ringtone suddenly sounds from <Subject 3>. She answers and brings the phone to her ear; the ringing stops. <Subject 1> (S1), in a clear, polite adult female Cantonese voice, says <d>[Cantonese] 你好 我是金崇煥請問您找那位？</d> She silently considers what she has heard for roughly two seconds. Keep the conversational rhythm natural; the caller is not heard.\n[Shot 3] At 00:09.000, the shot cuts to an intimate close-up of her face. <Subject 1> hesitates for about two seconds, her expression turning sorrowful as she ends the call. A small tear slowly runs from the corner of her eye. <Subject 1> (S1) murmurs to herself in a quiet, regretful Cantonese voice, <d>[Cantonese] 對比起是我的的錯</d>\n\noverall_soundscape:\nQuiet street ambience and a faint breeze through blossoms continue throughout. The door opening, footsteps, clothing rustle and a brief electronic phone ring are audible.\n\nnon_diegetic_music:\nN/A\n",
+        "width": 1280,
+        "height": 768,
+        "duration_seconds": 15,
+        "seed": 2026102508,
+        "control_after_generate": "fixed",
+        "timeout_minutes": 120
+      }
+    },
+    {
+      "id": 6,
+      "type": "Note",
+      "pos": [
+        350,
+        510
+      ],
+      "size": [
+        390,
+        310
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "使用方式 · 單段 5–15 秒",
+      "properties": {},
+      "widgets_values": [
+        "圖1＝背景；圖2＝人物；圖3＝手機（可替換為自己的素材）。\n在右側貼上完整六段 H3 提示詞，圖片編號按素材節點順序。\n只需設定成片寬、高與時長，再按「運行」。\n目前範例為 1280×768、15秒；寬高須為64的倍數，長邊1080–1920。\n完整流程自動完成10＋5採樣，成片以編號保存至桌面映射的「生成影片」。\n增加素材：調整素材節點的輸入數量，再連接原圖／視頻／音頻。\n採樣設定：原生一採10步 → 潛空間放大2倍 → Ref2V 8步v1.1 768p LoRA時序的最後5步（start=3；shift 12/3；Euler）。"
+      ],
+      "color": "#263747",
+      "bgcolor": "#344b60"
+    }
+  ],
+  "links": [
+    [
+      4,
+      4,
+      0,
+      5,
+      0,
+      "H3_REFERENCES"
+    ],
+    [
+      1,
+      1,
+      0,
+      4,
+      3,
+      "IMAGE"
+    ],
+    [
+      2,
+      2,
+      0,
+      4,
+      4,
+      "IMAGE"
+    ],
+    [
+      3,
+      3,
+      0,
+      4,
+      5,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.7,
+      "offset": [
+        35,
+        30
+      ]
+    }
+  },
+  "version": 0.4
+}

@@ -1,0 +1,15 @@
+{
+  "comfyui_root": "/srv/comfyui/ComfyUI",
+  "runtime_root": "/srv/h3/runtime",
+  "support_root": "/srv/h3/support",
+  "output_dir": "/srv/h3/videos",
+  "draft_dir": "/srv/h3/drafts",
+  "state_dir": "/srv/h3/state",
+  "cache_dir": "/srv/h3/adaln-cache",
+  "model_dir": "/srv/models/MiniMax-H3",
+  "weights_dir": "/srv/models/feihou-aligned-mixed",
+  "precision_manifest": "/srv/models/feihou-aligned-mixed/alignment-manifest.json",
+  "runtime_venv": "/srv/venvs/h3",
+  "lora_file": "/srv/models/minimax_h3_ref2v_turbo_8step_v1.1_768p_bf16.safetensors",
+  "upscaler_file": "/srv/models/h3_clean_latent_upscaler_film_epoch200.safetensors"
+}
