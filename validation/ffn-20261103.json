@@ -1,0 +1,799 @@
+{
+  "date": "2026-11-03",
+  "hardware": "2 x RTX 5090 32GB; AMD Ryzen 9 9950X",
+  "policy": {
+    "ffn_chunk_rows": 16384,
+    "native_steps": 10,
+    "final_schedule": 8,
+    "final_start": 3,
+    "tp": 2,
+    "lora_strength": 1.0,
+    "lora_alpha": 8
+  },
+  "benchmark65536": [
+    {
+      "block": 0,
+      "chunk_rows": 0,
+      "latency_ms": {
+        "mean": 95.37378132032852,
+        "median": 95.34962801262736,
+        "min": 95.13852884992957,
+        "max": 95.6331870984286,
+        "stdev": 0.20266430767275115
+      },
+      "ranks": [
+        {
+          "rank": 0,
+          "memory": {
+            "warmed_baseline": {
+              "allocated_bytes": 1541750272,
+              "reserved_bytes": 5077204992
+            },
+            "measurement_peak": {
+              "allocated_bytes": 4360322560,
+              "reserved_bytes": 5077204992
+            },
+            "end": {
+              "allocated_bytes": 1541750272,
+              "reserved_bytes": 5077204992
+            },
+            "peak_increment": {
+              "allocated_bytes": 2818572288,
+              "reserved_bytes": 0
+            }
+          },
+          "correctness": {
+            "status": "strict_equal",
+            "scope": "full FFN vs native whole-row reference",
+            "max_abs": 0.0,
+            "normalized_rmse": 0.0,
+            "bit_exact": true
+          }
+        },
+        {
+          "rank": 1,
+          "memory": {
+            "warmed_baseline": {
+              "allocated_bytes": 1541750272,
+              "reserved_bytes": 5077204992
+            },
+            "measurement_peak": {
+              "allocated_bytes": 4360322560,
+              "reserved_bytes": 5077204992
+            },
+            "end": {
+              "allocated_bytes": 1541750272,
+              "reserved_bytes": 5077204992
+            },
+            "peak_increment": {
+              "allocated_bytes": 2818572288,
+              "reserved_bytes": 0
+            }
+          },
+          "correctness": {
+            "status": "strict_equal",
+            "scope": "full FFN vs native whole-row reference",
+            "max_abs": 0.0,
+            "normalized_rmse": 0.0,
+            "bit_exact": true
+          }
+        }
+      ]
+    },
+    {
+      "block": 0,
+      "chunk_rows": 8192,
+      "latency_ms": {
+        "mean": 96.4049509105583,
+        "median": 96.38771484605968,
+        "min": 96.3163839187473,
+        "max": 96.51075396686792,
+        "stdev": 0.08028175525881062
+      },
+      "ranks": [
+        {
+          "rank": 0,
+          "memory": {
+            "warmed_baseline": {
+              "allocated_bytes": 1541750272,
+              "reserved_bytes": 5077204992
+            },
+            "measurement_peak": {
+              "allocated_bytes": 2953134080,
+              "reserved_bytes": 5077204992
+            },
+            "end": {
+              "allocated_bytes": 1541750272,
+              "reserved_bytes": 5077204992
+            },
+            "peak_increment": {
+              "allocated_bytes": 1411383808,
+              "reserved_bytes": 0
+            }
+          },
+          "correctness": {
+            "status": "strict_equal",
+            "scope": "full FFN vs native whole-row reference",
+            "max_abs": 0.0,
+            "normalized_rmse": 0.0,
+            "bit_exact": true
+          }
+        },
+        {
+          "rank": 1,
+          "memory": {
+            "warmed_baseline": {
+              "allocated_bytes": 1541750272,
+              "reserved_bytes": 5077204992
+            },
+            "measurement_peak": {
+              "allocated_bytes": 2953134080,
+              "reserved_bytes": 5077204992
+            },
+            "end": {
+              "allocated_bytes": 1541750272,
+              "reserved_bytes": 5077204992
+            },
+            "peak_increment": {
+              "allocated_bytes": 1411383808,
+              "reserved_bytes": 0
+            }
+          },
+          "correctness": {
+            "status": "strict_equal",
+            "scope": "full FFN vs native whole-row reference",
+            "max_abs": 0.0,
+            "normalized_rmse": 0.0,
+            "bit_exact": true
+          }
+        }
+      ]
+    },
+    {
+      "block": 0,
+      "chunk_rows": 16384,
+      "latency_ms": {
+        "mean": 96.56644767771165,
+        "median": 96.44185495562851,
+        "min": 96.3462449144572,
+        "max": 96.91124316304922,
+        "stdev": 0.2469119479019131
+      },
+      "ranks": [
+        {
+          "rank": 0,
+          "memory": {
+            "warmed_baseline": {
+              "allocated_bytes": 1541750272,
+              "reserved_bytes": 5077204992
+            },
+            "measurement_peak": {
+              "allocated_bytes": 3188015104,
+              "reserved_bytes": 5077204992
+            },
+            "end": {
+              "allocated_bytes": 1541750272,
+              "reserved_bytes": 5077204992
+            },
+            "peak_increment": {
+              "allocated_bytes": 1646264832,
+              "reserved_bytes": 0
+            }
+          },
+          "correctness": {
+            "status": "strict_equal",
+            "scope": "full FFN vs native whole-row reference",
+            "max_abs": 0.0,
+            "normalized_rmse": 0.0,
+            "bit_exact": true
+          }
+        },
+        {
+          "rank": 1,
+          "memory": {
+            "warmed_baseline": {
+              "allocated_bytes": 1541750272,
+              "reserved_bytes": 5077204992
+            },
+            "measurement_peak": {
+              "allocated_bytes": 3188015104,
+              "reserved_bytes": 5077204992
+            },
+            "end": {
+              "allocated_bytes": 1541750272,
+              "reserved_bytes": 5077204992
+            },
+            "peak_increment": {
+              "allocated_bytes": 1646264832,
+              "reserved_bytes": 0
+            }
+          },
+          "correctness": {
+            "status": "strict_equal",
+            "scope": "full FFN vs native whole-row reference",
+            "max_abs": 0.0,
+            "normalized_rmse": 0.0,
+            "bit_exact": true
+          }
+        }
+      ]
+    },
+    {
+      "block": 0,
+      "chunk_rows": 32768,
+      "latency_ms": {
+        "mean": 96.02676269908746,
+        "median": 96.0449161939323,
+        "min": 95.79062694683671,
+        "max": 96.24474495649338,
+        "stdev": 0.18583676296675783
+      },
+      "ranks": [
+        {
+          "rank": 0,
+          "memory": {
+            "warmed_baseline": {
+              "allocated_bytes": 1541750272,
+              "reserved_bytes": 5077204992
+            },
+            "measurement_peak": {
+              "allocated_bytes": 3657777152,
+              "reserved_bytes": 5077204992
+            },
+            "end": {
+              "allocated_bytes": 1541750272,
+              "reserved_bytes": 5077204992
+            },
+            "peak_increment": {
+              "allocated_bytes": 2116026880,
+              "reserved_bytes": 0
+            }
+          },
+          "correctness": {
+            "status": "strict_equal",
+            "scope": "full FFN vs native whole-row reference",
+            "max_abs": 0.0,
+            "normalized_rmse": 0.0,
+            "bit_exact": true
+          }
+        },
+        {
+          "rank": 1,
+          "memory": {
+            "warmed_baseline": {
+              "allocated_bytes": 1541750272,
+              "reserved_bytes": 5077204992
+            },
+            "measurement_peak": {
+              "allocated_bytes": 3657777152,
+              "reserved_bytes": 5077204992
+            },
+            "end": {
+              "allocated_bytes": 1541750272,
+              "reserved_bytes": 5077204992
+            },
+            "peak_increment": {
+              "allocated_bytes": 2116026880,
+              "reserved_bytes": 0
+            }
+          },
+          "correctness": {
+            "status": "strict_equal",
+            "scope": "full FFN vs native whole-row reference",
+            "max_abs": 0.0,
+            "normalized_rmse": 0.0,
+            "bit_exact": true
+          }
+        }
+      ]
+    },
+    {
+      "block": 29,
+      "chunk_rows": 0,
+      "latency_ms": {
+        "mean": 106.07615167585512,
+        "median": 106.08345502987504,
+        "min": 105.99068505689502,
+        "max": 106.1543149407953,
+        "stdev": 0.0670009400991776
+      },
+      "ranks": [
+        {
+          "rank": 0,
+          "memory": {
+            "warmed_baseline": {
+              "allocated_bytes": 1580263424,
+              "reserved_bytes": 4825546752
+            },
+            "measurement_peak": {
+              "allocated_bytes": 4398835712,
+              "reserved_bytes": 4825546752
+            },
+            "end": {
+              "allocated_bytes": 1580263424,
+              "reserved_bytes": 4825546752
+            },
+            "peak_increment": {
+              "allocated_bytes": 2818572288,
+              "reserved_bytes": 0
+            }
+          },
+          "correctness": {
+            "status": "strict_equal",
+            "scope": "full FFN vs native whole-row reference",
+            "max_abs": 0.0,
+            "normalized_rmse": 0.0,
+            "bit_exact": true
+          }
+        },
+        {
+          "rank": 1,
+          "memory": {
+            "warmed_baseline": {
+              "allocated_bytes": 1580263424,
+              "reserved_bytes": 4825546752
+            },
+            "measurement_peak": {
+              "allocated_bytes": 4398835712,
+              "reserved_bytes": 4825546752
+            },
+            "end": {
+              "allocated_bytes": 1580263424,
+              "reserved_bytes": 4825546752
+            },
+            "peak_increment": {
+              "allocated_bytes": 2818572288,
+              "reserved_bytes": 0
+            }
+          },
+          "correctness": {
+            "status": "strict_equal",
+            "scope": "full FFN vs native whole-row reference",
+            "max_abs": 0.0,
+            "normalized_rmse": 0.0,
+            "bit_exact": true
+          }
+        }
+      ]
+    },
+    {
+      "block": 29,
+      "chunk_rows": 8192,
+      "latency_ms": {
+        "mean": 106.90313942419986,
+        "median": 106.8380530923605,
+        "min": 106.81544221006334,
+        "max": 107.05592297017574,
+        "stdev": 0.10842792364911583
+      },
+      "ranks": [
+        {
+          "rank": 0,
+          "memory": {
+            "warmed_baseline": {
+              "allocated_bytes": 1580263424,
+              "reserved_bytes": 4825546752
+            },
+            "measurement_peak": {
+              "allocated_bytes": 2991647232,
+              "reserved_bytes": 4825546752
+            },
+            "end": {
+              "allocated_bytes": 1580263424,
+              "reserved_bytes": 4825546752
+            },
+            "peak_increment": {
+              "allocated_bytes": 1411383808,
+              "reserved_bytes": 0
+            }
+          },
+          "correctness": {
+            "status": "strict_equal",
+            "scope": "full FFN vs native whole-row reference",
+            "max_abs": 0.0,
+            "normalized_rmse": 0.0,
+            "bit_exact": true
+          }
+        },
+        {
+          "rank": 1,
+          "memory": {
+            "warmed_baseline": {
+              "allocated_bytes": 1580263424,
+              "reserved_bytes": 4825546752
+            },
+            "measurement_peak": {
+              "allocated_bytes": 2991647232,
+              "reserved_bytes": 4825546752
+            },
+            "end": {
+              "allocated_bytes": 1580263424,
+              "reserved_bytes": 4825546752
+            },
+            "peak_increment": {
+              "allocated_bytes": 1411383808,
+              "reserved_bytes": 0
+            }
+          },
+          "correctness": {
+            "status": "strict_equal",
+            "scope": "full FFN vs native whole-row reference",
+            "max_abs": 0.0,
+            "normalized_rmse": 0.0,
+            "bit_exact": true
+          }
+        }
+      ]
+    },
+    {
+      "block": 29,
+      "chunk_rows": 16384,
+      "latency_ms": {
+        "mean": 107.00708262932797,
+        "median": 107.02595300972462,
+        "min": 106.96619190275669,
+        "max": 107.02910297550261,
+        "stdev": 0.02894269292638043
+      },
+      "ranks": [
+        {
+          "rank": 0,
+          "memory": {
+            "warmed_baseline": {
+              "allocated_bytes": 1580263424,
+              "reserved_bytes": 4825546752
+            },
+            "measurement_peak": {
+              "allocated_bytes": 3226528256,
+              "reserved_bytes": 4825546752
+            },
+            "end": {
+              "allocated_bytes": 1580263424,
+              "reserved_bytes": 4825546752
+            },
+            "peak_increment": {
+              "allocated_bytes": 1646264832,
+              "reserved_bytes": 0
+            }
+          },
+          "correctness": {
+            "status": "strict_equal",
+            "scope": "full FFN vs native whole-row reference",
+            "max_abs": 0.0,
+            "normalized_rmse": 0.0,
+            "bit_exact": true
+          }
+        },
+        {
+          "rank": 1,
+          "memory": {
+            "warmed_baseline": {
+              "allocated_bytes": 1580263424,
+              "reserved_bytes": 4825546752
+            },
+            "measurement_peak": {
+              "allocated_bytes": 3226528256,
+              "reserved_bytes": 4825546752
+            },
+            "end": {
+              "allocated_bytes": 1580263424,
+              "reserved_bytes": 4825546752
+            },
+            "peak_increment": {
+              "allocated_bytes": 1646264832,
+              "reserved_bytes": 0
+            }
+          },
+          "correctness": {
+            "status": "strict_equal",
+            "scope": "full FFN vs native whole-row reference",
+            "max_abs": 0.0,
+            "normalized_rmse": 0.0,
+            "bit_exact": true
+          }
+        }
+      ]
+    },
+    {
+      "block": 29,
+      "chunk_rows": 32768,
+      "latency_ms": {
+        "mean": 107.16834501363337,
+        "median": 107.16943116858602,
+        "min": 107.07560204900801,
+        "max": 107.26000182330608,
+        "stdev": 0.07528481028614306
+      },
+      "ranks": [
+        {
+          "rank": 0,
+          "memory": {
+            "warmed_baseline": {
+              "allocated_bytes": 1580263424,
+              "reserved_bytes": 4825546752
+            },
+            "measurement_peak": {
+              "allocated_bytes": 3696290304,
+              "reserved_bytes": 4825546752
+            },
+            "end": {
+              "allocated_bytes": 1580263424,
+              "reserved_bytes": 4825546752
+            },
+            "peak_increment": {
+              "allocated_bytes": 2116026880,
+              "reserved_bytes": 0
+            }
+          },
+          "correctness": {
+            "status": "strict_equal",
+            "scope": "full FFN vs native whole-row reference",
+            "max_abs": 0.0,
+            "normalized_rmse": 0.0,
+            "bit_exact": true
+          }
+        },
+        {
+          "rank": 1,
+          "memory": {
+            "warmed_baseline": {
+              "allocated_bytes": 1580263424,
+              "reserved_bytes": 4825546752
+            },
+            "measurement_peak": {
+              "allocated_bytes": 3696290304,
+              "reserved_bytes": 4825546752
+            },
+            "end": {
+              "allocated_bytes": 1580263424,
+              "reserved_bytes": 4825546752
+            },
+            "peak_increment": {
+              "allocated_bytes": 2116026880,
+              "reserved_bytes": 0
+            }
+          },
+          "correctness": {
+            "status": "strict_equal",
+            "scope": "full FFN vs native whole-row reference",
+            "max_abs": 0.0,
+            "normalized_rmse": 0.0,
+            "bit_exact": true
+          }
+        }
+      ]
+    }
+  ],
+  "benchmark235520": [
+    {
+      "block": 0,
+      "chunk_rows": 0,
+      "latency_ms": {
+        "mean": 344.05981927799684,
+        "median": 343.87115691788495,
+        "min": 343.41287799179554,
+        "max": 344.89542292430997,
+        "stdev": 0.6197741437132775
+      },
+      "ranks": [
+        {
+          "rank": 0,
+          "memory": {
+            "warmed_baseline": {
+              "allocated_bytes": 5197086208,
+              "reserved_bytes": 17869832192
+            },
+            "measurement_peak": {
+              "allocated_bytes": 15326330368,
+              "reserved_bytes": 17869832192
+            },
+            "end": {
+              "allocated_bytes": 5197086208,
+              "reserved_bytes": 17869832192
+            },
+            "peak_increment": {
+              "allocated_bytes": 10129244160,
+              "reserved_bytes": 0
+            }
+          },
+          "correctness": {
+            "status": "strict_equal",
+            "scope": "full FFN vs native whole-row reference",
+            "max_abs": 0.0,
+            "normalized_rmse": 0.0,
+            "bit_exact": true
+          }
+        },
+        {
+          "rank": 1,
+          "memory": {
+            "warmed_baseline": {
+              "allocated_bytes": 5197086208,
+              "reserved_bytes": 17869832192
+            },
+            "measurement_peak": {
+              "allocated_bytes": 15326330368,
+              "reserved_bytes": 17869832192
+            },
+            "end": {
+              "allocated_bytes": 5197086208,
+              "reserved_bytes": 17869832192
+            },
+            "peak_increment": {
+              "allocated_bytes": 10129244160,
+              "reserved_bytes": 0
+            }
+          },
+          "correctness": {
+            "status": "strict_equal",
+            "scope": "full FFN vs native whole-row reference",
+            "max_abs": 0.0,
+            "normalized_rmse": 0.0,
+            "bit_exact": true
+          }
+        }
+      ]
+    },
+    {
+      "block": 0,
+      "chunk_rows": 16384,
+      "latency_ms": {
+        "mean": 347.602455643937,
+        "median": 347.6270360406488,
+        "min": 347.204556921497,
+        "max": 347.97577396966517,
+        "stdev": 0.31532742852807694
+      },
+      "ranks": [
+        {
+          "rank": 0,
+          "memory": {
+            "warmed_baseline": {
+              "allocated_bytes": 5197086208,
+              "reserved_bytes": 17869832192
+            },
+            "measurement_peak": {
+              "allocated_bytes": 8671019008,
+              "reserved_bytes": 17869832192
+            },
+            "end": {
+              "allocated_bytes": 5197086208,
+              "reserved_bytes": 17869832192
+            },
+            "peak_increment": {
+              "allocated_bytes": 3473932800,
+              "reserved_bytes": 0
+            }
+          },
+          "correctness": {
+            "status": "strict_equal",
+            "scope": "full FFN vs native whole-row reference",
+            "max_abs": 0.0,
+            "normalized_rmse": 0.0,
+            "bit_exact": true
+          }
+        },
+        {
+          "rank": 1,
+          "memory": {
+            "warmed_baseline": {
+              "allocated_bytes": 5197086208,
+              "reserved_bytes": 17869832192
+            },
+            "measurement_peak": {
+              "allocated_bytes": 8671019008,
+              "reserved_bytes": 17869832192
+            },
+            "end": {
+              "allocated_bytes": 5197086208,
+              "reserved_bytes": 17869832192
+            },
+            "peak_increment": {
+              "allocated_bytes": 3473932800,
+              "reserved_bytes": 0
+            }
+          },
+          "correctness": {
+            "status": "strict_equal",
+            "scope": "full FFN vs native whole-row reference",
+            "max_abs": 0.0,
+            "normalized_rmse": 0.0,
+            "bit_exact": true
+          }
+        }
+      ]
+    }
+  ],
+  "cpu": [
+    {
+      "chunk_rows": 0,
+      "ranks": [
+        {
+          "rank": 0,
+          "cpu_seconds": 3.1987553460000004,
+          "wall_seconds": 3.1966382819227874,
+          "cpu_cores_equivalent": 1.0006622782718912,
+          "threads": 16,
+          "omp_num_threads": "4",
+          "scope": "whole benchmark phase including warmup and coordination; not only NCCL"
+        },
+        {
+          "rank": 1,
+          "cpu_seconds": 3.198740961,
+          "wall_seconds": 3.1966413019690663,
+          "cpu_cores_equivalent": 1.0006568328544214,
+          "threads": 16,
+          "omp_num_threads": "4",
+          "scope": "whole benchmark phase including warmup and coordination; not only NCCL"
+        }
+      ]
+    },
+    {
+      "chunk_rows": 16384,
+      "ranks": [
+        {
+          "rank": 0,
+          "cpu_seconds": 3.2384637209999996,
+          "wall_seconds": 3.2362341701518744,
+          "cpu_cores_equivalent": 1.0006889337207698,
+          "threads": 16,
+          "omp_num_threads": "4",
+          "scope": "whole benchmark phase including warmup and coordination; not only NCCL"
+        },
+        {
+          "rank": 1,
+          "cpu_seconds": 3.2383422500000005,
+          "wall_seconds": 3.2362341098487377,
+          "cpu_cores_equivalent": 1.000651417690966,
+          "threads": 16,
+          "omp_num_threads": "4",
+          "scope": "whole benchmark phase including warmup and coordination; not only NCCL"
+        }
+      ]
+    }
+  ],
+  "full_resample": {
+    "returncode": 0,
+    "seconds": 700.8036494669504,
+    "width": 1920,
+    "height": 1088,
+    "frames": 362,
+    "fps": 24,
+    "output_byte_identical_to_reference": true,
+    "ffn": [
+      {
+        "chunk_rows": 16384,
+        "calls": 250,
+        "local_projection_chunks": 3750,
+        "max_rows": 235396,
+        "algorithm": "row-chunked-native-ffn-v1",
+        "native_base_kernels": true,
+        "native_lora": true,
+        "tp_output_reductions_per_ffn": 1,
+        "weights_dtype_unchanged": true
+      },
+      {
+        "chunk_rows": 16384,
+        "calls": 250,
+        "local_projection_chunks": 3750,
+        "max_rows": 235396,
+        "algorithm": "row-chunked-native-ffn-v1",
+        "native_base_kernels": true,
+        "native_lora": true,
+        "tp_output_reductions_per_ffn": 1,
+        "weights_dtype_unchanged": true
+      }
+    ],
+    "source": "existing completed learned handoff; no first-pass regeneration",
+    "max_allocated_MiB": [
+      28746.8388671875,
+      26588.6708984375
+    ],
+    "global_peak_reduced": false
+  },
+  "limitations": [
+    "FFN synthetic-input benchmarks use real production weights and LoRA; they are not complete-video speed measurements.",
+    "Full GPU validation covers a single existing-handoff final resample; not a new complete V2 two-segment run.",
+    "Global process peak was unchanged; other phases still require memory and all OOM cases are not proven eliminated."
+  ]
+}

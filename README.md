@@ -97,6 +97,12 @@ python -m unittest discover -s plugins/ComfyUI-H3-Unified-Creation/tests
 
 既有 MP4 的重新編碼放大不是此版本的成品入口；不要把兩段生成接續解讀為任意影片都可還原原始 latent。
 
+## FFN 顯存優化與診斷
+
+二採 FFN 預設按 16,384 個 token 分塊，使用原生混合精度算子與 LoRA；局部結果組合後仍只執行一次 TP 歸約。工具不會在日常生成時開啟 profiler。可選的官方 benchmark / 雙卡 trace 入口和鎖定方式見 [diagnostics/README](support/diagnostics/README.md)。
+
+實測範圍與限制見 [FFN 驗證報告](docs/ffn-optimization.md)：大尺寸 FFN 診斷峰值約 14.27→8.08 GiB；完整既有交接二採通過且輸出逐位元組相同，但整體最高顯存沒有降低。
+
 ## English
 
 Deployment bundle for an existing two-GPU native LightX2V H3 pipeline: native 10-step draft → learned clean-latent 2× → five evaluations on the original eight-step Turbo schedule, plus two-segment creation. Clone outside `custom_nodes`, supply the exact mixed-precision model assets and a compatible CUDA environment, then use `tools/install.py`. No weights or personal media are distributed. The relocated public bundle has CPU/static validation, not a fresh end-to-end GPU certification.

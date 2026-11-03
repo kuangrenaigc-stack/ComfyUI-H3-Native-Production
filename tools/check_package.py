@@ -9,7 +9,7 @@ import sys
 ROOT=Path(__file__).resolve().parents[1]
 
 def main():
-    tracked=subprocess.run(['git','ls-files','-z'],cwd=ROOT,capture_output=True,text=True)
+    tracked=subprocess.run(['git','ls-files','-z','--cached','--others','--exclude-standard'],cwd=ROOT,capture_output=True,text=True)
     files=[ROOT/name for name in tracked.stdout.split('\0') if name] if tracked.returncode==0 and tracked.stdout else [p for p in ROOT.rglob('*') if p.is_file() and not any(x in p.parts for x in ('.git','__pycache__'))]
     problems=[];python_count=json_count=0
     private_patterns=[r'/Users/kuang' + r'ren',r'/home/kuang' + r'ren',r'/data1' + r't/',r'192\.168\.\d+\.\d+',r'gh[pousr]_[A-Za-z0-9]{30,}',r'github_pat_[A-Za-z0-9_]{40,}']
